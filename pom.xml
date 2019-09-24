@@ -319,23 +319,23 @@
         <version>${testcontainers.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>mysql</artifactId>
-        <version>${testcontainers.version}</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>org.testcontainers</groupId>-->
+<!--        <artifactId>mysql</artifactId>-->
+<!--        <version>${testcontainers.version}</version>-->
+<!--      </dependency>-->
 
-      <dependency>
-        <groupId>org.mariadb.jdbc</groupId>
-        <artifactId>mariadb-java-client</artifactId>
-        <version>${mariadb-java-client.version}</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>org.mariadb.jdbc</groupId>-->
+<!--        <artifactId>mariadb-java-client</artifactId>-->
+<!--        <version>${mariadb-java-client.version}</version>-->
+<!--      </dependency>-->
 
-      <dependency>
-        <groupId>com.zaxxer</groupId>
-        <artifactId>HikariCP</artifactId>
-        <version>${HikariCP.version}</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>com.zaxxer</groupId>-->
+<!--        <artifactId>HikariCP</artifactId>-->
+<!--        <version>${HikariCP.version}</version>-->
+<!--      </dependency>-->
 
       <!-- Don't bring in brave's transitive dep on zipkin -->
       <dependency>
