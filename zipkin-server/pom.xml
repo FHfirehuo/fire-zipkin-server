@@ -121,6 +121,11 @@
       <version>1.12.1</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.jooq</groupId>
+      <artifactId>jooq</artifactId>
+    </dependency>
+
     <!-- to test the experimental grpc endpoint with the square/wire library -->
     <dependency>
       <groupId>io.zipkin.proto3</groupId>
@@ -142,44 +147,44 @@
     </dependency>
 
     <!-- Cassandra and Cassandra 3 backends -->
-    <dependency>
-      <groupId>${project.groupId}.zipkin2</groupId>
-      <artifactId>zipkin-storage-cassandra-v1</artifactId>
-      <version>${project.version}</version>
-      <optional>true</optional>
-      <exclusions>
-        <exclusion>
-          <groupId>com.datastax.cassandra</groupId>
-          <artifactId>cassandra-driver-core</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>${project.groupId}.zipkin2</groupId>-->
+<!--      <artifactId>zipkin-storage-cassandra-v1</artifactId>-->
+<!--      <version>${project.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--      <exclusions>-->
+<!--        <exclusion>-->
+<!--          <groupId>com.datastax.cassandra</groupId>-->
+<!--          <artifactId>cassandra-driver-core</artifactId>-->
+<!--        </exclusion>-->
+<!--      </exclusions>-->
+<!--    </dependency>-->
     <!-- shaded to not interfere with netty 4.1 and boringssl. [JAVA-1241] -->
-    <dependency>
-      <groupId>com.datastax.cassandra</groupId>
-      <artifactId>cassandra-driver-core</artifactId>
-      <version>${cassandra-driver-core.version}</version>
-      <classifier>shaded</classifier>
-      <optional>true</optional>
-      <exclusions>
-        <exclusion>
-          <groupId>io.netty</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.datastax.cassandra</groupId>
-      <artifactId>cassandra-driver-mapping</artifactId>
-      <version>${cassandra-driver-core.version}</version>
-      <optional>true</optional>
-      <exclusions>
-        <exclusion>
-          <groupId>com.datastax.cassandra</groupId>
-          <artifactId>cassandra-driver-core</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>com.datastax.cassandra</groupId>-->
+<!--      <artifactId>cassandra-driver-core</artifactId>-->
+<!--      <version>${cassandra-driver-core.version}</version>-->
+<!--      <classifier>shaded</classifier>-->
+<!--      <optional>true</optional>-->
+<!--      <exclusions>-->
+<!--        <exclusion>-->
+<!--          <groupId>io.netty</groupId>-->
+<!--          <artifactId>*</artifactId>-->
+<!--        </exclusion>-->
+<!--      </exclusions>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>com.datastax.cassandra</groupId>-->
+<!--      <artifactId>cassandra-driver-mapping</artifactId>-->
+<!--      <version>${cassandra-driver-core.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--      <exclusions>-->
+<!--        <exclusion>-->
+<!--          <groupId>com.datastax.cassandra</groupId>-->
+<!--          <artifactId>cassandra-driver-core</artifactId>-->
+<!--        </exclusion>-->
+<!--      </exclusions>-->
+<!--    </dependency>-->
 
     <!-- Elasticsearch http -->
     <dependency>
@@ -190,30 +195,30 @@
     </dependency>
 
     <!-- MySQL backend -->
-    <dependency>
-      <groupId>${project.groupId}.zipkin2</groupId>
-      <artifactId>zipkin-storage-mysql-v1</artifactId>
-      <version>${project.version}</version>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.mariadb.jdbc</groupId>
-      <artifactId>mariadb-java-client</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>com.zaxxer</groupId>
-      <artifactId>HikariCP</artifactId>
-      <optional>true</optional>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>${project.groupId}.zipkin2</groupId>-->
+<!--      <artifactId>zipkin-storage-mysql-v1</artifactId>-->
+<!--      <version>${project.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.mariadb.jdbc</groupId>-->
+<!--      <artifactId>mariadb-java-client</artifactId>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>com.zaxxer</groupId>-->
+<!--      <artifactId>HikariCP</artifactId>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
 
     <!-- ActiveMQ Collector -->
-    <dependency>
-      <groupId>${project.groupId}.zipkin2</groupId>
-      <artifactId>zipkin-collector-activemq</artifactId>
-      <version>${project.version}</version>
-      <optional>true</optional>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>${project.groupId}.zipkin2</groupId>-->
+<!--      <artifactId>zipkin-collector-activemq</artifactId>-->
+<!--      <version>${project.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
 
     <!-- Kafka Collector -->
     <dependency>
@@ -224,20 +229,20 @@
     </dependency>
 
     <!-- RabbitMQ Collector -->
-    <dependency>
-      <groupId>${project.groupId}.zipkin2</groupId>
-      <artifactId>zipkin-collector-rabbitmq</artifactId>
-      <version>${project.version}</version>
-      <optional>true</optional>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>${project.groupId}.zipkin2</groupId>-->
+<!--      <artifactId>zipkin-collector-rabbitmq</artifactId>-->
+<!--      <version>${project.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
 
     <!-- Scribe Collector -->
-    <dependency>
-      <groupId>${project.groupId}.zipkin2</groupId>
-      <artifactId>zipkin-collector-scribe</artifactId>
-      <version>${project.version}</version>
-      <optional>true</optional>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>${project.groupId}.zipkin2</groupId>-->
+<!--      <artifactId>zipkin-collector-scribe</artifactId>-->
+<!--      <version>${project.version}</version>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
 
     <!--Prometheus metrics-->
     <dependency>
